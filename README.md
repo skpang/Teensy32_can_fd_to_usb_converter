@@ -15,11 +15,15 @@ d0A2f11223345AFED9879aabbccdd54678765543212de6545dea21234567865 4343237678886545
 
 Command list
 
-O Open CAN channel 
+O Open CAN channel
+
 C Close CAN channel
 
+
 Sx Set baudrate
+
 x: Bitrate id (0-8)
+
 S0 = 10 k
 S1 = 20 k
 S2 = 50 k
@@ -46,30 +50,50 @@ SM = 1000k/8M
 SN = 125k/500k     
 
 tiiildd
+
 Transmit standard (11 bit) frame.
+
 iii: Identifier in hexadecimal format (000-7FF)
+
 l: Data length (0-8)
+
 dd: Data byte value in hexadecimal format (00-FF)
+
 
 Tiiiiiiiildd..
+
 Transmit extended (29 bit) frame.
+
 iiiiiii:Identifier in hexadecimal format (0000000-1FFFFFFF) l: Data length (0-8)
+
 dd: Data byte value in hexadecimal format (00-FF)
+
 
 diiildd..
+
 Transmit CANFD standard (11 bit) frame.
+
+
 iii: Identifier in hexadecimal format (000-7FF)
 l: Data length (0-F)
+
 dd: Data byte value in hexadecimal format (00-FF)
 
+
 Diiiiiiiildd..
+
 Transmit CANFD extended (29 bit) frame.
+
 iiiiiiii:Identifier in hexadecimal format (0000000-1FFFFFFF) l: Data length (0-F)
+
 dd: Data byte value in hexadecimal format (00-FF)
+
 
 
 Data length for CAN FD
+
 0 to 8   As in CAN 2.0
+
 9  12 bytes
 A  16 bytes
 B  20 bytes
@@ -80,6 +104,7 @@ F  64 bytes
 
 
 V Get hardware version
+
 v Get firmware version.
 
 
