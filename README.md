@@ -5,7 +5,7 @@ http://skpang.co.uk/catalog/mcp2517fd-can-fd-breakout-with-teensy-include-teensy
 ASCII Commands
 
 Example: Open the CAN port at the default rate of 500k/2M. 
-O[CR]
+O[CR]<br>
 t001411223344[CR]
 d7DF81122334455667788[CR]
 d0A2f11223345AFED9879aabbccdd54678765543212de6545dea21234567865 4343237678886545dead451290897876543678334455667788990099887677 ddeeaa32[CR]
